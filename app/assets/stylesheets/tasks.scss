@@ -1,8 +1,89 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.Main {
-	display:flex;
-	justify-content: center;
-  padding: 5% 10%;
+@import "_variables.scss";
+@import "_mixins.scss";
+
+html {
+	box-sizing: border-box;
+}
+
+a {
+	color: $polymath-tertiary;
+	text-decoration: none;
+}
+
+body {
+	color:$polymath-font;
+}
+
+.simple_form {
+	padding: 5%;
+	border-radius: 8px;
+	border: 1px solid #d2d2d2;
+	background: #f9f9f9;
+	text-align: center;
+}
+
+label {
+	display:block;
+}
+
+.form-control {
+	width: 100%;
+	border-radius: 3px;
+	padding:10px 5px;
+	color:$polymath-font;
+	border: 1px solid #c1c1c1;
+	box-sizing: border-box;
+}
+
+fieldset {
+	border: none;
+	padding: 10px 0;
+}
+
+input[type="submit"] {
+	border: none;
+	background: $polymath-font;
+	padding: 10px 25px;
+	border-radius: 20px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	cursor:pointer;
+	box-sizing: border-box;
+} 
+
+.Login__Wrapp {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0 auto;
+	padding: 8%;
+	box-sizing: border-box;
+	@include mediaPolyMath(xs) {
+		width: 100%;
+	}
+	img {
+		max-width: 300px;
+    display: block;
+    margin: 0 auto;
+	}
+	input[type="submit"] {
+		margin-top:5%;
+	}
+	h2 {
+		text-align: center;
+	}
+	a {
+		display: block;
+		text-align: center;
+		margin: 5% 0 0 0;
+		transition: .5s;
+		&:hover {
+			transform:translateY(-2px) scale(1.05);
+			transition:.5s;
+		}
+	}
 }
