@@ -1,9 +1,9 @@
 # Polymath Task App
 
 ## Print Screens
-![Alt text](/app/assets/images/Polymath-Task-App_list.png "Polymath Task App - Listing")
-![Alt text](/relative/path/to/img.jpg?raw=true "Polymath Task App - Create Task")
-![Alt text](/relative/path/to/img.jpg?raw=true "Polymath Task App - Register user")
+![Polymath Task App - Listing](/app/assets/images/Polymath-Task-App_list.png "Polymath Task App - Listing")
+![Polymath Task App - Create Task](/app/assets/images/Polymath-Task-App_add.png "Polymath Task App - Create Task")
+![Polymath Task App - Register user](/app/assets/images/Polymath-Task-App_register "Polymath Task App - Register user")
 
 [project.com](https://project.com)
 
