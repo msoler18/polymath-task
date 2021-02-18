@@ -94,6 +94,9 @@ input[type="submit"] {
 .Dashboard {
 	display: flex;
 	height: 100vh;
+	@include mediaPolyMath(xs) {
+		flex-direction: column;
+	}
 	.Sidebar__Menu {
 		display: flex;
 		flex-direction: column;
@@ -119,6 +122,9 @@ input[type="submit"] {
 		padding:5%;
 		width: 100%;
 		box-sizing: border-box;
+		@include mediaPolyMath(xs) {
+			box-sizing: unset;
+		}
 	}
 	table {
 		margin:5% 0;
@@ -162,6 +168,9 @@ input[type="submit"] {
   justify-content: space-between;
   width: 40%;
 	margin-bottom: 3%;
+	@include mediaPolyMath(xs) {
+		float: initial;
+	}
 }
 
 .btn {
