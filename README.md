@@ -9,14 +9,15 @@
 ### Polymath Task App - Register user
 ![Polymath Task App - Register user](/app/assets/images/Polymath-Task-App_register.png "Polymath Task App - Register user")
 
-[project.com](https://project.com)
+[Polymath task app](https://polymath-task.herokuapp.com/)
+[Polymath task app - Explanation](https://project.com)
 
 ## Install
 
 ### Clone the repository
 
 ```shell
-git clone git@github.com:juliendargelos/project.git
+git clone https://github.com/msoler18/polymath-task.git
 cd project
 ```
 
@@ -46,7 +47,7 @@ bundle && yarn
 
 Using [Figaro](https://github.com/laserlemon/figaro):
 
-See [config/application.yml.sample](https://github.com/juliendargelos/project/blob/master/config/application.yml.sample) and contact the developer: [contact@juliendargelos.com](mailto:contact@juliendargelos.com) (sensitive data).
+See [config/application.yml.sample](https://github.com/juliendargelos/project/blob/master/config/application.yml.sample) and contact the developer: [msoler735@gmail.com](msoler735@gmail.com) (sensitive data).
 
 ### Initialize the database
 
