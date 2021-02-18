@@ -1,5 +1,9 @@
 %p#notice= notice
 
+= link_to 'Edit', edit_task_path(@task)
+\|
+= link_to 'Back', tasks_path
+
 %p
   %b Name:
   = @task.name
@@ -21,6 +25,4 @@
     = f.input :body, label: false, as: :string, placeholder: 'Add note for task', input_html: { autocomplete: :off }
 
 
-= link_to 'Edit', edit_task_path(@task)
-\|
-= link_to 'Back', tasks_path
+

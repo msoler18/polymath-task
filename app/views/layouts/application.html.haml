@@ -8,9 +8,15 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
+  %body{:class => ("Dashboard" if user_signed_in?)}
     - if user_signed_in?
-      = 'Hello:' + current_user.email
-      = link_to 'Logout', destroy_user_session_path, method: :delete
+      .Sidebar__Menu
+        = image_tag "Polymath_Logo_transparent.png", :class => "logo"
+        %h2
+          Polymath Task App
+        = image_tag "irish.png", :class => "avatar"
+        %span
+          = current_user.email
+        = link_to 'Logout', destroy_user_session_path, method: :delete
     .Main
       = yield

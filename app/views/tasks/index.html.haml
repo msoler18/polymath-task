@@ -4,7 +4,9 @@
 = form_tag tasks_path, method: 'get' do
   = text_field_tag :search, params[:search]
   = submit_tag "Search", :name => nil
-
+.Actions__wrapper 
+  = link_to 'New Task', new_task_path, :class => "Header_Action btn btn-secondary"
+  = link_to 'New Category', new_category_path, :class => "Header_Action btn btn-secondary"
 %table
   %thead
     %tr
@@ -12,9 +14,7 @@
       %th Description
       %th Due date
       %th Category
-      %th Actions
-      %th
-      %th
+      %th{:colspan => 3} Actions
 
   %tbody
     - @tasks.each do |task|
@@ -23,13 +23,12 @@
         %td= task.description
         %td= task.due_date
         %td= task.category.name
-        %td= link_to 'Show', task
+        %td= link_to 'View', task
         %td= link_to 'Edit', edit_task_path(task)
-        %td= link_to 'Destroy', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Delete', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
 .pagination_wrap
   = pagy_nav(@pagy).html_safe
 
-= link_to 'New Task', new_task_path
