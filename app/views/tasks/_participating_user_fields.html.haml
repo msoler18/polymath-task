@@ -1,0 +1,2 @@
+.nested-fields
+  = f.input :user_id, as: :select, collection: User.all - [current_user], label_method: -> (u) { u.email }
