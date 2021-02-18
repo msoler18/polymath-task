@@ -10,7 +10,9 @@
 ![Polymath Task App - Register user](/app/assets/images/Polymath-Task-App_register.png "Polymath Task App - Register user")
 
 [Polymath task app](https://polymath-task.herokuapp.com/)
-[Polymath task app - Explanation](https://project.com)
+
+
+[Polymath task app - Explanation](https://www.loom.com/share/c32fe3cc06af46159b06f2a2d48aeb15)
 
 ## Install
 
